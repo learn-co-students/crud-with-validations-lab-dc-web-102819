@@ -1,0 +1,18 @@
+<h1>Song Details</h1>
+
+<ul>
+    <li>Title: <%= @song.title %></li>
+    <li>Released:
+        <% if released == true || release_year %>
+            <%= @song.release_year %>
+        <% else %>
+            <%= "Song not released." %>
+        <% end %></li>
+    <li>Artist: <%= @song.artist %></li>
+    <li>Genre:
+        <% if genre %>
+            <%= @song.genre %>
+        <% else %>
+            <%= "No genre listed" %>
+        <% end %></li>
+</ul>
